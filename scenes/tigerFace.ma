@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: tigerFace.ma
-//Last modified: Tue, Mar 05, 2019 11:57:40 AM
+//Last modified: Tue, Mar 05, 2019 02:56:13 PM
 //Codeset: 1252
 requires maya "2018";
 currentUnit -l centimeter -a degree -t film;
@@ -13,8 +13,8 @@ fileInfo "license" "education";
 createNode transform -s -n "persp";
 	rename -uid "3D745D0A-4C64-271F-7E12-BF809E3B4BB9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -1.8003079652633369 -28.122231375683597 75.367447847805977 ;
-	setAttr ".r" -type "double3" 18.261647271140969 -1441.7999999997669 9.9441402124817792e-17 ;
+	setAttr ".t" -type "double3" 0.3367308121127528 -14.936222250012944 78.561270082787871 ;
+	setAttr ".r" -type "double3" 8.6616472711409855 -1440.199999999739 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "1EC0BC5B-487C-067F-CBDC-D88A70538D07";
 	setAttr -k off ".v" no;
