@@ -1,6 +1,6 @@
 //Maya ASCII 2018 scene
 //Name: Gorillaz Fan Model.ma
-//Last modified: Thu, Apr 25, 2019 09:58:51 AM
+//Last modified: Thu, Apr 25, 2019 02:59:52 PM
 //Codeset: 1252
 requires maya "2018";
 requires "stereoCamera" "10.0";
@@ -15,15 +15,15 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "E65B6400-44B0-6F84-7C54-7AA6706F8FE1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 0.54503376843683782 -9.7474353120621657 19.327019089088981 ;
-	setAttr ".r" -type "double3" -0.19442359326540459 2522.4201525072717 -6.9947625220717594e-18 ;
+	setAttr ".t" -type "double3" -1.3159367961351276 -6.3956762828036879 51.885794971493127 ;
+	setAttr ".r" -type "double3" -3.7944235932658321 2518.8201525071859 -1.2426676333203984e-17 ;
 	setAttr ".rp" -type "double3" -5.5511151231257827e-16 1.3322676295501878e-15 0 ;
 	setAttr ".rpt" -type "double3" -1.2043858949281783e-15 3.2980752301134167e-15 -3.3082581977925398e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "0C7417E1-453D-166A-B39F-31B97721DD05";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 18.954655449909794;
+	setAttr ".coi" 51.62049225708833;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -16323,7 +16323,6 @@ createNode mesh -n "polySurfaceShape1" -p "Face_Geo";
 	setAttr ".ai_translator" -type "string" "polymesh";
 createNode transform -n "Hair" -p "Geometry";
 	rename -uid "70784AF4-487D-3505-8B4A-BA9B081A887B";
-	setAttr ".v" no;
 createNode transform -n "pCylinder8" -p "Hair";
 	rename -uid "40B8EB55-45ED-1A14-AFFD-8A92420E86D4";
 	setAttr ".rp" -type "double3" 5.6832481622695923 -3.1667027473449707 6.8207299709320068 ;
@@ -39203,7 +39202,6 @@ createNode lambert -n "Face_Texture";
 createNode shadingEngine -n "lambert6SG";
 	rename -uid "0D9E3E81-4543-B30B-11A2-7D8719A4D37F";
 	setAttr ".ihi" 0;
-	setAttr -s 2 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo5";
 	rename -uid "BE6C9004-42DC-F825-E491-D89D15639F16";
@@ -39212,7 +39210,7 @@ createNode lambert -n "Accessories1";
 createNode shadingEngine -n "lambert7SG";
 	rename -uid "BF3DE843-43C6-A3F1-67CC-A287AD5204A0";
 	setAttr ".ihi" 0;
-	setAttr -s 11 ".dsm";
+	setAttr -s 12 ".dsm";
 	setAttr ".ro" yes;
 createNode materialInfo -n "materialInfo6";
 	rename -uid "BB664B3B-445C-27B8-4026-FD85A7586FFC";
@@ -40689,7 +40687,7 @@ createNode polyTweakUV -n "polyTweakUV1";
 	setAttr ".uvtk[5000:5005]" -0.036622643 -0.056421876 -0.036696851 -0.055852413
 		 -0.036765516 -0.055284441 -0.05042088 -0.0010339245 -0.051266551 0 -0.050161839 -0.011321217;
 createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo";
-	rename -uid "F3105D18-4B84-894B-163A-D0BAB400F486";
+	rename -uid "C2D401A5-4975-755A-493A-E2BC9D599DC6";
 	setAttr ".tgi[0].tn" -type "string" "Untitled_1";
 	setAttr ".tgi[0].vl" -type "double2" -330.95236780151544 -323.80951094248991 ;
 	setAttr ".tgi[0].vh" -type "double2" 317.85713022663526 338.09522466054096 ;
